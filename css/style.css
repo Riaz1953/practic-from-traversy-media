@@ -1,0 +1,158 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@400;700;800&display=swap');
+
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+ }
+ :root{
+    --primary-color: #047aed;
+    --secondary-color:#333
+ }
+ body{
+    font-family: 'lato',sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.6;
+ }
+ ul{
+    list-style: none;
+ }
+ a{
+    text-decoration: none;
+    color: var(--secondary-color);
+ }
+ h1,h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+ }
+ p{
+    margin: 10px 0;
+ }
+ img{
+    width: 100%;
+    /* Navbar Start */
+ }
+ .navbar{
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 70px;
+ }
+ .navbar .flex{
+    justify-content: space-between;
+ }
+ .navbar ul{
+    display: flex;
+ }
+ .navbar a{
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+ }
+ .navbar a:hover{
+    border-bottom: 2px solid #fff;
+ }
+ .container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto; /* If we do't Write this line of code nav bar will remain down because of line height */
+    padding: 0 40px;
+    
+ }
+ .flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+ }
+ /* ShowCase */
+ .showcase .grid{
+    grid-template-columns: 55% 44%;
+    grid-gap: 30px;
+    overflow: visible;
+ }
+.showcase{
+    height: 400px;
+    background-color:var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+.showcase h1{
+    font-size: 40px;
+    font-weight: 700;
+
+}
+.showcase p{
+    margin: 20px 0;
+}
+.btn-outline{
+    background-color: transparent;
+    border: 1px solid #fff!important; 
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+
+}
+.showcase-form{
+    position: relative;
+    height: 350px;
+    top: 60px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+}
+.showcase-form .form-control{
+    margin: 30px 0;
+}
+.form-control input[type= "text"], input[type= "email"]{
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    font-size: 18px;
+    padding: 5px 0;
+}
+.showcase-form input:focus{
+    outline: none;
+}
+.showcase::before,.showcase::after{
+    content: "";
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: #fff;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+.btn{
+    
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover{
+    transform: scale(0.8);
+}
+ /* Card */
+ .card{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    color: var(--secondary-color);
+ }
+ /* Job Start */
