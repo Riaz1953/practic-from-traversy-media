@@ -36,6 +36,7 @@
  }
  img{
     width: 100%;
+
     /* Navbar Start */
  }
  .navbar{
@@ -64,6 +65,7 @@
     grid-gap: 30px;
     overflow: visible;
  }
+ /* Showcase */
 .showcase{
     height: 400px;
     background-color:var(--primary-color);
@@ -78,8 +80,14 @@
 .showcase p{
     margin: 20px 0;
 }
-
-
+.showcase .grid{
+   overflow: visible;
+   grid-template-columns: 55% auto;
+   gap: 30px;
+}
+.showcase-text{
+   animation:slideInFromLeft 1s ease-in;
+}
 
 .showcase-form{
     position: relative;
@@ -92,7 +100,8 @@
 .showcase-form .form-control{
     margin: 30px 0;
 }
-.form-control input[type= "text"], input[type= "email"]{
+.form-control input[type= "text"], 
+input[type= "email"]{
     border: 0;
     border-bottom: 1px solid #b4becb;
     width: 100%;
@@ -119,7 +128,31 @@
 
  
  
- /* Job Start */
+ /* Stats */
+ .stats {
+   padding-top: 100px;
+   animation: slideInFromBottom 1s ease-in;
+ }
+ 
+ .stats-heading {
+   max-width: 500px;
+   margin: auto;
+ }
+ 
+ .stats .grid h3 {
+   font-size: 35px;
+ }
+ 
+ .stats .grid p {
+   font-size: 20px;
+   font-weight: bold;
+ }
+ /* Cloud */
+.cloud .grid {
+   grid-template-columns: 4fr 3fr;
+ }
+ 
+ 
 /* Language */
 .language .card{
    text-align: center;
@@ -132,7 +165,7 @@
 }
 .language .card h4{
    font-size: 20px;
-   margin-bottom: 20px;
+   margin-bottom: 10px;
 }
 .language .card:hover{
    transform: translateY(-15px);

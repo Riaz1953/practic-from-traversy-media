@@ -23,7 +23,7 @@
     color: var(--secondary-color);
  }
  .btn:hover{
-    transform: scale(0.8);
+    transform: scale(0.98);
 }
 .btn-outline{
     background-color: transparent;
