@@ -8,7 +8,11 @@
  }
  :root{
     --primary-color: #047aed;
-    --secondary-color:#333
+    --secondary-color:#333;
+    --super-color:#1c3fa8;
+    --dark-color:#002240;
+    --light-color:#f4f4f4;
+    
  }
  body{
     font-family: 'lato',sans-serif;
@@ -53,19 +57,7 @@
  .navbar a:hover{
     border-bottom: 2px solid #fff;
  }
- .container{
-    max-width: 1100px;
-    margin: 0 auto;
-    overflow: auto; /* If we do't Write this line of code nav bar will remain down because of line height */
-    padding: 0 40px;
-    
- }
- .flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
- }
+
  /* ShowCase */
  .showcase .grid{
     grid-template-columns: 55% 44%;
@@ -86,20 +78,9 @@
 .showcase p{
     margin: 20px 0;
 }
-.btn-outline{
-    background-color: transparent;
-    border: 1px solid #fff!important; 
-}
-.grid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    
 
-}
+
+
 .showcase-form{
     position: relative;
     height: 350px;
@@ -134,25 +115,27 @@
     -moz-transform: skewY(-3deg);
     -ms-transform: skewY(-3deg);
 }
-.btn{
-    
-    padding: 10px 30px;
-    cursor: pointer;
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-}
-.btn:hover{
-    transform: scale(0.8);
-}
- /* Card */
- .card{
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: 10px;
-    color: var(--secondary-color);
- }
+
+
+ 
+ 
  /* Job Start */
+/* Language */
+.language .card{
+   text-align: center;
+   margin: 18px 10px 40px;
+   transition: transform 0.2s ease-in;
+
+}
+.language .flex{
+   flex-wrap: wrap;
+}
+.language .card h4{
+   font-size: 20px;
+   margin-bottom: 20px;
+}
+.language .card:hover{
+   transform: translateY(-15px);
+}
+/* Footer */
+
