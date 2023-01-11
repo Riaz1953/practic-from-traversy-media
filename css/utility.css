@@ -131,8 +131,8 @@
 /* Footer  */
 footer{
     width: 100%;
-    position: absolute;
-    bottom:0;
+    /* position: absolute;
+    bottom:0; */
     background: linear-gradient(to right #00093c,#2d0b00);
     color: #fff;
     padding: 100px 0 30px;
@@ -162,6 +162,14 @@ footer{
     background-color: var(--light-color);
     color: #333;
 }
+.bg-primary a, 
+.btn-primary a,
+.bg-secondary a,
+ .btn-secondary a,
+ .bg-dark a,
+ .btn-dark a{
+    color:#fff;
+ }
 /* text size */
 .lead{
     font-size: 20px;
